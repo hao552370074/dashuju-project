@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import { Route, Link } from "react-router-dom";
 import { Layout, Menu, Breadcrumb, Icon, Button } from "antd";
+import history from "./history/history";
+import Model1 from "./component/Model-1";
+import Model2 from "./component/Model-2";
+
+import './App.scss'
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
 
@@ -9,10 +14,12 @@ export default class App extends Component {
     super(props);
     this.state = {
       // routerParams:props.match.params,
+      routeName: ""
     };
   }
   render() {
-    console.log(this);
+    console.log(window.location);
+    console.log(this.props);
     return (
       <Layout>
         <Header className="header">
@@ -23,16 +30,16 @@ export default class App extends Component {
             defaultSelectedKeys={["2"]}
             style={{ lineHeight: "64px" }}
           >
-            <Menu.Item key="1">nav 1</Menu.Item>
-            <Menu.Item key="2">nav 2</Menu.Item>
-            <Menu.Item key="3">nav 3</Menu.Item>
+            <Menu.Item key="1">首页</Menu.Item>
+            <Menu.Item key="2">模型</Menu.Item>
+            <Menu.Item key="3">关于</Menu.Item>
           </Menu>
         </Header>
         <Layout style={{ height: "100vh" }}>
           <Sider width={200} style={{ background: "#fff" }}>
             <Menu
               mode="inline"
-              defaultSelectedKeys={["1"]}
+              defaultSelectedKeys={[window.location.pathname.replace('/','')||"1"]}
               defaultOpenKeys={["sub1"]}
               style={{ height: "100%", borderRight: 0 }}
             >
@@ -45,8 +52,10 @@ export default class App extends Component {
                   </span>
                 }
               >
-                <Menu.Item key="1">Model-1</Menu.Item>
-                <Menu.Item key="2">Model-2</Menu.Item>
+                <Menu.Item key="Model-1" onClick={() => this.ModelBtn(1)}>
+                  Model-1
+                </Menu.Item>
+                <Menu.Item key="Model-2" onClick={() => this.ModelBtn(2)}>Model-2</Menu.Item>
                 <Menu.Item key="3">Model-3</Menu.Item>
                 <Menu.Item key="4">Model-4</Menu.Item>
                 <Menu.Item key="5">Model-5</Menu.Item>
@@ -85,7 +94,7 @@ export default class App extends Component {
             <Breadcrumb style={{ margin: "16px 0" }}>
               <Breadcrumb.Item>Home</Breadcrumb.Item>
               <Breadcrumb.Item>List</Breadcrumb.Item>
-              <Breadcrumb.Item>App</Breadcrumb.Item>
+              <Breadcrumb.Item>{this.state.routeName}</Breadcrumb.Item>
             </Breadcrumb>
             <Content
               style={{
@@ -95,13 +104,31 @@ export default class App extends Component {
                 minHeight: 280
               }}
             >
-              Content
+              <Route path="/Model-1" component={Model1}></Route>
+              {/* <Route path="/Model-2" component={Model2}></Route> */}
             </Content>
           </Layout>
         </Layout>
       </Layout>
     );
   }
+  ModelBtn = (i) => {
+    if (i==1) {
+      history.push("/Model-1", "哈哈");
+      this.setState({
+        routeName:'Model-1'
+      })
+    }else if(i==2){
+      history.push("/Model-2", "哈哈");
+      this.setState({
+          routeName:'Model-2'
+      })
+      // 改变为大屏幕
+      console.log(this.props);
+      
+      this.props.iss()
+    }
+  };
 }
 
 // export default App
