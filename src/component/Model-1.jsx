@@ -13,7 +13,8 @@ class Model1 extends Component {
   render() {
     console.log(this.props);
     return <div>
-        1
+        <img src={require('../img/timg.gif')} alt=""/>
+        
     </div>;
   }
 }
