@@ -93,25 +93,24 @@ class Model2 extends Component {
   }
   render() {
     console.log(this.props);
-    const Pie = createG2(chart => {
-      chart.coord("theta");
-      chart
-        .intervalStack()
-        .position(Stat.summary.proportion('count'))
-        .color("item", ["#0000FF", "#0044FF", "#0088FF", "#00BBFF", "#00FFFF"]);
-      chart.render();
-    });
-    const RingPlot = createG2(chart=> {
-      chart.coord("polar");
-      chart.intervalStack()
-        .position(Stat.summary.proportion('count'))
-        .color("item", ["#0000FF", "#0044FF", "#0088FF", "#00BBFF", "#00FFFF"]);
-      chart.render();
-    });
+    // const Pie = createG2(chart => {
+    //   chart.coord("theta");
+    //   chart
+    //     .intervalStack()
+    //     .position(Stat.summary.proportion('count'))
+    //     .color("item", ["#0000FF", "#0044FF", "#0088FF", "#00BBFF", "#00FFFF"]);
+    //   chart.render();
+    // });
+    // const RingPlot = createG2(chart=> {
+    //   chart.coord("polar");
+    //   chart.intervalStack()
+    //     .position(Stat.summary.proportion('count'))
+    //     .color("item", ["#0000FF", "#0044FF", "#0088FF", "#00BBFF", "#00FFFF"]);
+    //   chart.render();
+    // });
     return (
       <div className="model-main">
-        <div id='containerA'></div>
-        <Pie
+        {/* <Pie
           data={this.state.data}
           width={this.state.width}
           height={this.state.height}
@@ -120,7 +119,7 @@ class Model2 extends Component {
         />
         <RingPlot data={this.state.data}
           width={this.state.width}
-          height={this.state.height}></RingPlot>
+          height={this.state.height}></RingPlot> */}
         <div className="title">
           <p>智慧楼宇体征指数</p>
         </div>
