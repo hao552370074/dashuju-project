@@ -1,0 +1,48 @@
+.nav-content {
+  margin: 10px 0;
+  width: 100%;
+  height: 80px;
+  background-image: url("../img/top-nav.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+  p {
+    margin: 14px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff;
+  }
+  div {
+    height: 40px;
+    width: 100%;
+    position: relative;
+    top: -20px;
+    left: 10px;
+    float: left;
+    span {
+      margin: 0 5px;
+      align-content: center;
+      color: #17d3fe;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .vb {
+      float: right;
+    }
+  }
+}
+.m-main {
+  // background-color: red;
+}
+.ant-layout-content {
+  padding: 0;
+}
+.left-content{
+    span{
+        padding: 0 0 0 10px;
+        border-left: 4px solid #17d3fe;
+    }
+}

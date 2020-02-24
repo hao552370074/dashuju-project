@@ -8,13 +8,13 @@
   width: 100%;
   height: 100%;
   background: #000000 url("../src/img/kuang.png") no-repeat center;
-  background-size: 40%;
+  background-size: 35%;
 }
-.content-left{
+.content-left {
   float: left;
   overflow: hidden;
   width: 20%;
-  height: 100vh;
+  // height: 100vh;
 }
 
 // 模型导航主标题
@@ -28,12 +28,12 @@
   z-index: 9999;
   background: url("../src/img/title-text.png") no-repeat top;
   background-size: 100%;
-  p{
+  p {
     text-align: center;
     font-size: 40px;
     margin-top: 8px;
     letter-spacing: 4px;
-    text-shadow:0 0 2px #7ecbff;
+    text-shadow: 0 0 2px #7ecbff;
     color: #5fbfff;
   }
 }
@@ -43,28 +43,74 @@ canvas {
 }
 
 // Left左边模块
-.LeftContent{
+.LeftContent {
   overflow: hidden;
   width: 340px;
   height: 230px;
   background: url("./img/kuang-main.png") no-repeat center;
   background-size: 100%;
-  p{
+  p {
     text-align: center;
     color: rgb(255, 204, 94);
     margin-top: 26px;
   }
 }
 
-.ant-progress-text{
+.ant-progress-text {
   color: #fff !important;
 }
 
-
 // Div自动布局
-.DivMain{
+.DivMain {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   color: #fff;
+  span {
+    text-align: center;
+  }
+}
+
+.sss {
+  margin: 10px 0 0;
+  width: 100%;
+  padding: 1.2% 5%;
+  height: 90px;
+  // background-color: rgba(17, 34, 82, 0.397);
+  // margin: 0 auto;
+  // border:2px dashed #00416d;
+  // border-radius: 6px;
+  background-image: url("./img/111.png");
+  background-size: 93%;
+  background-repeat: no-repeat;
+  background-position: center;
+  div{
+    width: 5.88%;
+    float: left;
+    img {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+.ssone{
+  width: 100%;
+  padding:0.8% 20%;
+  height: 90px;
+  .spans{
+    color: #f6be23;
+  }
+  div{
+    margin: 0 7%;
+    float: left;
+    position: relative;
+    span{
+      font-weight: 700;
+      color: #00b3fe;
+      position: absolute;
+      left: 15px;
+      top: 9px;
+    }
+  }
 }

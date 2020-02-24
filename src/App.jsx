@@ -19,7 +19,7 @@ export default class App extends Component {
   }
   render() {
     console.log(window.location);
-    console.log(this.props);
+    console.log(this,'this');
     return (
       <Layout>
         <Header className="header">
@@ -98,8 +98,8 @@ export default class App extends Component {
             </Breadcrumb>
             <Content
               style={{
-                background: "#fff",
-                padding: 24,
+                background: "#0a011c",
+                padding: 0,
                 margin: 0,
                 minHeight: 280
               }}
@@ -125,7 +125,6 @@ export default class App extends Component {
       })
       // 改变为大屏幕
       console.log(this.props);
-      
       this.props.iss()
     }
   };
