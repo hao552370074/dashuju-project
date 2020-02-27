@@ -93,3 +93,50 @@
     font-style: normal;
   }
 }
+
+
+.kkk{
+  width: 100%;
+  margin-top: 10px;
+  height: 60px;
+  background-image: url('../img//kkk.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 0 0 0 5px;
+  p{
+    display: inline-block;
+    width: 116px;
+    margin: 10px 0 0 7px;
+  }
+  p:last-child{
+    width: 20px;
+  }
+}
+
+.ktext{
+  p{
+    padding-left: 8px;
+    // margin: 0 10px;
+    width: 122px;
+    display: inline-block;
+    i{
+      color: #698fb9;
+      
+    }
+  }
+}
+
+.right-content{
+  color: #ffffff;
+  float: left;
+  width: 20%;
+  margin-top: 70px;
+  span:first-child {
+    padding: 0 0 0 10px;
+    border-left: 4px solid #17d3fe;
+    color: #ffffff;
+  }
+  p{
+    margin-top: 20px;
+  }
+}

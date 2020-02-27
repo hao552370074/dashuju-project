@@ -1,5 +1,7 @@
+import EchartsTest from "./model/index";
+
 import React, { Component } from "react";
-import { Layout, Menu, Breadcrumb, Icon, Button } from "antd";
+import { Layout, Menu, Breadcrumb, Icon, Button, Progress } from "antd";
 import "./homecss.scss";
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
@@ -12,7 +14,7 @@ class Model1 extends Component {
     };
   }
   render() {
-    console.log(this.props);
+    console.log(this,'this');
     return (
       <div className="m-main">
         {/* <img src={require('../img/timg.gif')} alt=""/> */}
@@ -195,7 +197,7 @@ class Model1 extends Component {
                 width: "30%",
                 textAlign: "center",
                 position: "relative",
-                margin: "0 0 40px 0"
+                margin: "0 0 80px 0"
               }}
             >
               <p>告警数量</p>
@@ -235,7 +237,7 @@ class Model1 extends Component {
             单灯亮灯图 <i>能耗热力图</i> <i>能耗柱状图</i>
           </span>
           <div className="bjs"></div>
-          <div style={{overflow:"hidden"}}>
+          <div style={{ overflow: "hidden" }}>
             <div style={{ float: "left", width: "33%" }}>
               <span>告警计划</span>
               <p>
@@ -263,17 +265,110 @@ class Model1 extends Component {
             <div style={{ float: "left", width: "33%" }}>
               <span>最新告警</span>
               <p></p>
-              <i>某某设备异常告警,某某设备异常告警,某某设备异常告警,某某设备异常告警,</i>
-              <i>某某设备异常告警,某某设备异常告警,某某设备异常告警,某某设备异常告警,</i>
+              <i>
+                某某设备异常告警,某某设备异常告警,某某设备异常告警,某某设备异常告警,
+              </i>
+              <i>
+                某某设备异常告警,某某设备异常告警,某某设备异常告警,某某设备异常告警,
+              </i>
             </div>
           </div>
           <div style={{}}>
-            <span>
-              单灯亮灯图 <i>能耗热力图</i> <i>能耗柱状图</i>
-            </span>
-
+            <span>工单生命周期分布</span>
+            <p style={{ display: "inline-block" }}>
+              本月工单总数 <i>9 8 7 6 5 单</i>
+            </p>
+            <p style={{ display: "inline-block", margin: "0 40px" }}>
+              待处理警告 <i>8</i>
+            </p>
+            <p style={{ display: "inline-block" }}>
+              已处理警告 <i>880</i>
+            </p>
+            <div className="ktext">
+              <p>
+                <i>创建10</i>
+              </p>
+              <p>
+                <i>创建10</i>
+              </p>
+              <p>
+                <i>创建10</i>
+              </p>
+              <p>
+                <i>创建10</i>
+              </p>
+              <p>
+                <i>创建10</i>
+              </p>
+              <p>
+                <i>创建10</i>
+              </p>
+              <p>
+                <i>创建10</i>
+              </p>
+              <p style={{ width: "45px", textAlign: "right" }}>
+                <i>创建10</i>
+              </p>
+            </div>
+            <div className="kkk">
+              <p>26%</p>
+              <p>10%</p>
+              <p>10%</p>
+              <p>10%</p>
+              <p>12%</p>
+              <p>40%</p>
+              <p>10%</p>
+              <p>20%</p>
+            </div>
           </div>
-          
+        </div>
+        <div className="right-content">
+          <div style={{marginBottom:'30px'}}>
+            <span>能耗数据</span>
+            <p style={{fontSize:'12px'}}>昨日能耗</p>
+            <h3 style={{textAlign:'center',color:'#17d3fe'}}> 9 8 0 0 0 K W H</h3>
+            <Progress
+              style={{ width: "100%", display: "block", margin: "0 20px 0 0", }}
+              strokeColor={{
+                from: "#108ee9",
+                to: "#87d068"
+              }}
+              status="active"
+              percent={90}
+              strokeLinecap="square"
+            />
+          </div>
+          <div style={{marginBottom:'30px'}}>
+            <p style={{fontSize:'12px'}}>本月能耗</p>
+            <h3 style={{textAlign:'center',color:'#17d3fe'}}> 9 8 0 0 0 K W H</h3>
+            <Progress
+              style={{ width: "100%", display: "block", margin: "0 20px 0 0", }}
+              strokeColor={{
+                from: "#108ee9",
+                to: "#87d068"
+              }}
+              status="active"
+              percent={90}
+              strokeLinecap="square"
+            />
+          </div>
+          <div style={{marginBottom:'30px'}}>
+            <p style={{fontSize:'12px'}}>上月能耗</p>
+            <h3 style={{textAlign:'center',color:'#17d3fe'}}> 9 8 0 0 0 K W H</h3>
+            <Progress
+              style={{ width: "100%", display: "block", margin: "0 20px 0 0", }}
+              strokeColor={{
+                from: "#108ee9",
+                to: "#87d068"
+              }}
+              status="active"
+              percent={90}
+              strokeLinecap="square"
+            />
+          </div>
+          <div>
+            <EchartsTest></EchartsTest>
+          </div>
         </div>
       </div>
     );
@@ -281,3 +376,4 @@ class Model1 extends Component {
 }
 
 export default Model1;
+

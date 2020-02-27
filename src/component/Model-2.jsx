@@ -5,8 +5,8 @@
 // import F2 from "@antv/f2";
 // import _ from "lodash";
 
-import G2 from "@antv/g2";
 
+import G2 from "@antv/g2";
 import EchartsTest from "./model/index";
 
 import React, { Component } from "react";
@@ -237,7 +237,7 @@ class Model2 extends Component {
           {/* <div className="LeftContent" style={{ margin: 15 }}> */}
           {/* <p>消防系统</p> */}
           {/* <div className="DivMain" style={{ margin: "14px auto 10px" }}> */}
-          {/* <EchartsTest></EchartsTest> */}
+          <EchartsTest></EchartsTest>
           {/* <Pie
                 data={this.state.data}
                 width={this.state.width}
