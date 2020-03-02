@@ -181,6 +181,9 @@ class EchartsTest extends Component {
     return option;
   };
 
+
+  
+
   render() {
     return (
       <div style={{ width: "100%" }}>
