@@ -7,16 +7,19 @@ import "antd/dist/antd.css";
 import { Router, Link, Route } from "react-router-dom";
 import history from "./history/history";
 import Model2 from "../src/component/Model-2";
+import Model3 from "../src/component/Model-3";
 
 import G2 from "@antv/g2";
 
 // 判断替换整个显示的渲染页面
-var ifs = false;
-var ss = () => {
-  ifs = !ifs;
+var ss = (p) => {
+  var ifs = 0;
+  if (p) {
+    ifs = p;
+  }
   ReactDOM.render(
     <Router history={history}>
-      {ifs ? <App iss={ss} /> : <Model2></Model2>}
+      {ifs ==0? <App iss={ss} /> : ifs ==2?<Model2></Model2>:<Model3></Model3>}
     </Router>,
     document.getElementById("root")
   );

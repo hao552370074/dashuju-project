@@ -256,7 +256,7 @@ class Model2 extends Component {
         </div>
 
         <div style={{ float: "left", width: "60%", height: "80vh" }}>
-          <div id="container"></div>
+          <div></div>
         </div>
 
         <div className="content-left" style={{ float: "right" }}>
