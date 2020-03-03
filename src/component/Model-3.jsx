@@ -84,7 +84,7 @@ class Model3 extends Component {
     return (
       <div
         className="model-main"
-        style={{ backgroundImage: "none", backgroundColor: "#032030" }}
+        style={{ backgroundImage: "none", backgroundColor: "#032030",}}
       >
         <div className="title">
           <p>智慧楼宇体征指数</p>
@@ -388,14 +388,14 @@ class Model3 extends Component {
           style={{
             // backgroundColor: "red",
             width: "100%",
-            // height: "20vh",
+            height: "37px",
             float: "left"
           }}
         >
           {/* <div className="sss" style={{ background: "none" }}>
             111
           </div> */}
-          <div className="ssones">
+          <div className="ssones" style={{position:'relative',top:'-80px'}}>
             <div>
               <span>
                 安防
