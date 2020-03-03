@@ -71,8 +71,8 @@ class EchartsTestK extends Component {
         {
           axisLine: {
             lineStyle: {
-              color: "#fff", // y轴的颜色
-              width: 1 //y轴线的宽度
+              color: "#fff", // y轴的颜色//
+              width: 1 ,//y轴线的宽度//
             }
           }
         }

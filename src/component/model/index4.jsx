@@ -19,7 +19,7 @@ import ReactEcharts from "echarts-for-react";
 
 class EchartsTestV extends Component {
   componentDidMount() {}
-
+  
   getOption = () => {
     let option = {
       // backgroundColor: "#2c343c",
