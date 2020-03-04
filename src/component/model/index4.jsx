@@ -22,69 +22,53 @@ class EchartsTestV extends Component {
   
   getOption = () => {
     let option = {
-      // backgroundColor: "#2c343c",
       title: {
-        // text: "Customized Pie",
-        left: "center",
-        top: 10,
-        textStyle: {
-          color: "#ccc"
-        }
-      },
-
-      tooltip: {
-        trigger: "item",
-        formatter: "{a} <br/>{b} : {c} ({d}%)"
-      },
-
-      visualMap: {
-        show: false,
-        min: 80,
-        max: 600,
-        inRange: {
-          colorLightness: [0, 1]
-        }
-      },
-      series: [
-        {
-          name: "访问来源",
-          type: "pie",
-          radius: "45%",
-          center: ["50%", "40%"],
-          data: [
-            { value: 335, name: "直接访问" },
-            { value: 310, name: "邮件营销" },
-            { value: 274, name: "联盟广告" },
-            { value: 235, name: "视频广告" },
-            { value: 400, name: "搜索引擎" }
-          ].sort(function(a, b) {
-            return a.value - b.value;
-          }),
-          roseType: "radius",
-          label: {
-            color: "#ffffff"
-          },
-          labelLine: {
-            lineStyle: {
-              color: "rgba(255, 255, 255, 0.3)"
+        // text: '南丁格尔玫瑰图',
+        // subtext: '纯属虚构',
+        left: 'center'
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b} : {c} ({d}%)'
+    },
+    legend: {
+        left: 'center',
+        top: 'bottom',
+        data: ['rose1', 'rose2', 'rose3', 'rose4', 'rose5', 'rose6', 'rose7', 'rose8']
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {show: true},
+            // dataView: {show: true, readOnly: false},
+            magicType: {
+                show: true,
+                type: ['pie', 'funnel']
             },
-            smooth: 0.2,
-            length: 10,
-            length2: 20
-          },
-          itemStyle: {
-            color: "#028eed",
-            shadowBlur: 200,
-            shadowColor: "rgba(0, 0, 0, 0.5)"
-          },
-
-          animationType: "scale",
-          animationEasing: "elasticOut",
-          animationDelay: function(idx) {
-            return Math.random() * 200;
-          }
+            // restore: {show: true},
+            // saveAsImage: {show: true}
         }
-      ]
+    },
+    series: [
+        {
+            name: '面积模式',
+            type: 'pie',
+            radius: [30,70],
+            center: ['50%', '40%'],
+            roseType: 'area',
+            color:['#019cff','#0088de','#0173bc','#015f9c'],
+            data: [
+                {value: 10, name: 'c类型：33%'},
+                {value: 5, name: 'a类型：25%'},
+                {value: 15, name: 'c类型：33%'},
+                {value: 25, name: 'b类型：44%'},
+                {value: 20, name: 'a类型：55%'},
+                {value: 35, name: 'd类型：13%'},
+                {value: 30, name: 'c类型：33%'},
+                // {value: 40, name: 'rose8'}
+            ]
+        }
+    ]
     };
     return option;
   };

@@ -8,6 +8,7 @@
 import EchartsTestS from "./model/index3";
 import EchartsTestV from "./model/index4";
 import EchartsTestK from "./model/index5";
+import EchartsTestP from "./model/index6";
 import G2 from "@antv/g2";
 
 import React, { Component } from "react";
@@ -214,7 +215,8 @@ class Model3 extends Component {
             <span style={{ color: "#fff", fontSize: "16px" }}>
               门禁系统报警
             </span>
-            <div style={{ margin: "20px" }}>
+            <EchartsTestP></EchartsTestP>
+            {/* <div style={{ margin: "20px" }}>
               <div style={{ color: "#fff" }}>
                 <span>区域一</span>
                 <span>
@@ -248,7 +250,7 @@ class Model3 extends Component {
                 </span>
                 <span>575台</span>
               </div>
-            </div>
+            </div> */}
           </div>
           <div
             className="LeftContent"
@@ -379,6 +381,7 @@ class Model3 extends Component {
             style={{ margin: 15, backgroundImage: "none", height: "240px" }}
           >
             <EchartsTestK></EchartsTestK>
+            
           </div>
 
         </div>

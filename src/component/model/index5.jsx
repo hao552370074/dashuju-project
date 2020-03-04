@@ -40,7 +40,7 @@ class EchartsTestK extends Component {
         textStyle: {
           //图例文字的样式
           color: "#fff",
-          fontSize: 14,
+          fontSize: 14
         }
       },
       toolbox: {
@@ -72,7 +72,7 @@ class EchartsTestK extends Component {
           axisLine: {
             lineStyle: {
               color: "#fff", // y轴的颜色//
-              width: 1 ,//y轴线的宽度//
+              width: 1 //y轴线的宽度//
             }
           }
         }
@@ -103,7 +103,23 @@ class EchartsTestK extends Component {
           name: "直接访问",
           type: "line",
           stack: "总量",
-          areaStyle: {},
+          areaStyle: {
+            //颜色渐变函数 前四个参数分别表示四个位置依次为左、下、右、上
+            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+              {
+                offset: 0,
+                color: "rgba(220,96,35,0.80)"
+              },
+              {
+                offset: 0.34,
+                color: "rgba(96,96,35,0.50)"
+              },
+              {
+                offset: 1,
+                color: "rgba(35,96,35,0.20)"
+              }
+            ])
+          },
           data: [320, 332, 301, 334, 390, 330, 320]
         },
         {
@@ -116,7 +132,25 @@ class EchartsTestK extends Component {
               position: "top"
             }
           },
-          areaStyle: {},
+          areaStyle: {
+            normal: {
+              //颜色渐变函数 前四个参数分别表示四个位置依次为左、下、右、上
+              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                {
+                  offset: 0,
+                  color: "rgba(80,141,255,0.50)"
+                },
+                {
+                  offset: 0.34,
+                  color: "rgba(56,155,255,0.30)"
+                },
+                {
+                  offset: 1,
+                  color: "rgba(38,197,254,0.00)"
+                }
+              ])
+            }
+          },
           data: [820, 932, 901, 934, 1290, 1330, 1320]
         }
       ]
