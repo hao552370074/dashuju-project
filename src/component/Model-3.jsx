@@ -6,6 +6,8 @@
 // import _ from "lodash";
 
 import EchartsTestS from "./model/index3";
+import EchartsTest7 from "./model/index7";
+import EchartsTest8 from "./model/index8";
 import EchartsTestV from "./model/index4";
 import EchartsTestK from "./model/index5";
 import EchartsTestP from "./model/index6";
@@ -85,7 +87,7 @@ class Model3 extends Component {
     return (
       <div
         className="model-main"
-        style={{ backgroundImage: "none", backgroundColor: "#032030",}}
+        style={{ backgroundImage: "none", backgroundColor: "#032030" }}
       >
         <div className="title">
           <p>智慧楼宇体征指数</p>
@@ -105,11 +107,11 @@ class Model3 extends Component {
             </span>
             <p style={{ margin: "15px", marginLeft: "40px", color: "#fff" }}>
               外出人员：
-              <span style={{ fontSize: "20px", color: "#0088df" }}>236人</span>
+              <span style={{ fontSize: "20px", color: "#01edff" }}>236人</span>
             </p>
             <p style={{ margin: "15px", marginLeft: "40px", color: "#fff" }}>
               来访人员：
-              <span style={{ fontSize: "20px", color: "#0088df" }}>76人</span>
+              <span style={{ fontSize: "20px", color: "#01edff" }}>76人</span>
             </p>
           </div>
           <div
@@ -124,7 +126,67 @@ class Model3 extends Component {
             style={{ margin: "15px 0 0 15px", background: "none" }}
           >
             <span style={{ color: "#fff", fontSize: "16px" }}>温度监测</span>
+            <div className="model" style={{ marginTop: "40px" }}>
+              <Progress
+                type="circle"
+                strokeColor="#dcb90d"
+                percent={75}
+                width={60}
+                format={percent => `北1# ${percent}℃`}
+              />
+              <Progress
+                type="circle"
+                strokeColor="#05b4bc"
+                percent={75}
+                width={60}
+                format={percent => `北2# ${percent}℃`}
+              />
+              <Progress
+                type="circle"
+                strokeColor="#dcb90d"
+                percent={75}
+                width={60}
+                format={percent => `北3# ${percent}℃`}
+              />
+              <Progress
+                type="circle"
+                strokeColor="#05b4bc"
+                percent={75}
+                width={60}
+                format={percent => `北4# ${percent}℃`}
+              />
+            </div>
             <div className="model">
+              <Progress
+                type="circle"
+                strokeColor="#dcb90d"
+                percent={75}
+                width={60}
+                format={percent => `北5# ${percent}℃`}
+              />
+              <Progress
+                type="circle"
+                strokeColor="#05b4bc"
+                percent={75}
+                width={60}
+                format={percent => `北6# ${percent}℃`}
+              />
+              <Progress
+                type="circle"
+                strokeColor="#dcb90d"
+                percent={75}
+                width={60}
+                format={percent => `南1# ${percent}℃`}
+              />
+              <Progress
+                type="circle"
+                strokeColor="#05b4bc"
+                percent={75}
+                width={60}
+                format={percent => `南2# ${percent}℃`}
+              />
+            </div>
+            {/* <div className="model">
               <div style={{ float: "left" }}>
                 <img src={require("../img/model4-2.png")}></img>
                 <div style={{ position: "absolute", top: "0px" }}>
@@ -199,7 +261,7 @@ class Model3 extends Component {
                   <p style={{ color: "#ddb910", color: "#03b4b7" }}>27℃</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -259,7 +321,8 @@ class Model3 extends Component {
             <span style={{ color: "#fff", fontSize: "16px" }}>
               消防系统监测
             </span>
-            <div style={{ margin: "20px" }}>
+            <EchartsTest7></EchartsTest7>
+            {/* <div style={{ margin: "20px" }}>
               <div style={{ color: "#fff" }}>
                 <span>温感报警</span>
                 <span>
@@ -303,8 +366,8 @@ class Model3 extends Component {
                   />
                 </span>
                 <span>789</span>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
           </div>
           <div
             className="LeftContent"
@@ -325,10 +388,9 @@ class Model3 extends Component {
             className="LeftContent"
             style={{ margin: 15, backgroundImage: "none", height: "150px" }}
           >
-            <span style={{ color: "#fff", fontSize: "16px" }}>
-              安防报警
-            </span>
-            <div style={{ margin: "20px" }}>
+            <span style={{ color: "#fff", fontSize: "16px" }}>安防报警</span>
+            <EchartsTest8></EchartsTest8>
+            {/* <div style={{ margin: "20px" }}>
               <div style={{ color: "#fff" }}>
                 <span style={{color:'#01d2d6'}}>温感报警</span>
                 <span>
@@ -373,7 +435,7 @@ class Model3 extends Component {
                 </span>
                 <span>789</span>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div
@@ -381,9 +443,7 @@ class Model3 extends Component {
             style={{ margin: 15, backgroundImage: "none", height: "240px" }}
           >
             <EchartsTestK></EchartsTestK>
-            
           </div>
-
         </div>
 
         {/* <div style={{backgroundColor:'red',width:200,height:80,position:'fixed',bottom:0}}></div> */}
@@ -398,7 +458,10 @@ class Model3 extends Component {
           {/* <div className="sss" style={{ background: "none" }}>
             111
           </div> */}
-          <div className="ssones" style={{position:'relative',top:'-80px'}}>
+          <div
+            className="ssones"
+            style={{ position: "relative", top: "-80px" }}
+          >
             <div>
               <span>
                 安防

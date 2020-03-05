@@ -83,7 +83,7 @@ class EchartsTestP extends Component {
       yAxis: [
         {
           type: "category",
-          data: ["区域三", "区域二", "区域一"],
+          data: ["其他", "手动报警", "烟感报警",'温感报警'],
           axisLine: {
             show: false,
             lineStyle: {
@@ -125,7 +125,7 @@ class EchartsTestP extends Component {
           type: "bar",
           stack: "总量",
           barCategoryGap: 10,
-          data: [320, 302, 301],
+          data: [320, 302, 301,200],
           itemStyle: {
             normal: {
               label: {
@@ -150,11 +150,11 @@ class EchartsTestP extends Component {
       ],
       grid: {
         top:"20px",
-        left:'50px',
+        left:"60px",
         backgroundColor: "rgb(255, 255, 255)",
         borderWidth: 0,
         borderColor: "rgb(255, 255, 255)",
-        height:70
+        height:90
       },
       backgroundColor: "rgba(0, 0, 0, 0)",
     };
@@ -165,7 +165,7 @@ class EchartsTestP extends Component {
     return (
       <div style={{ width: "100%" }}>
         <ReactEcharts
-          style={{ height: "330px" }}
+          style={{ height: "330px"}}
           option={this.getOption()}
           theme="ThemeStyle"
         />

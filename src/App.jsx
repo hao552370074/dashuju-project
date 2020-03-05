@@ -18,6 +18,9 @@ export default class App extends Component {
       routeName: ""
     };
   }
+
+  
+
   render() {
     console.log(window.location);
     console.log(this, "this");
