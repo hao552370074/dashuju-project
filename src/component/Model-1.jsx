@@ -348,7 +348,7 @@ class Model1 extends Component {
                 to: "#87d068"
               }}
               status="active"
-              percent={90}
+              percent={70}
               strokeLinecap="square"
             />
           </div>
@@ -362,7 +362,7 @@ class Model1 extends Component {
                 to: "#87d068"
               }}
               status="active"
-              percent={90}
+              percent={30}
               strokeLinecap="square"
             />
           </div>

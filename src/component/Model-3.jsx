@@ -451,7 +451,7 @@ class Model3 extends Component {
           style={{
             // backgroundColor: "red",
             width: "100%",
-            height: "37px",
+            height: "20vh",
             float: "left"
           }}
         >
@@ -460,7 +460,7 @@ class Model3 extends Component {
           </div> */}
           <div
             className="ssones"
-            style={{ position: "relative", top: "-80px" }}
+            style={{ position: "absolute", bottom: "50px" }}
           >
             <div>
               <span>
