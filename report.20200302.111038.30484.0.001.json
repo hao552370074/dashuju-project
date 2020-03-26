@@ -4,14 +4,14 @@
     "reportVersion": 1,
     "event": "Allocation failed - JavaScript heap out of memory",
     "trigger": "FatalError",
-    "filename": "report.20200114.171206.44192.0.001.json",
-    "dumpEventTime": "2020-01-14T17:12:06Z",
-    "dumpEventTimeStamp": "1578993126400",
-    "processId": 44192,
-    "cwd": "C:\\Users\\Administrator\\Desktop\\dashuju-project",
+    "filename": "report.20200302.111038.30484.0.001.json",
+    "dumpEventTime": "2020-03-02T11:10:38Z",
+    "dumpEventTimeStamp": "1583118638220",
+    "processId": 30484,
+    "cwd": "C:\\Users\\Administrator\\Desktop\\home\\dashuju-project",
     "commandLine": [
       "node",
-      "C:\\Users\\Administrator\\Desktop\\dashuju-project\\node_modules\\_react-scripts@3.3.0@react-scripts\\scripts\\start.js"
+      "C:\\Users\\Administrator\\Desktop\\home\\dashuju-project\\node_modules\\_react-scripts@3.4.0@react-scripts\\scripts\\start.js"
     ],
     "nodejsVersion": "v12.12.0",
     "wordSize": 64,
@@ -49,74 +49,74 @@
       {
         "model": "Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz",
         "speed": 3408,
-        "user": 1781484,
+        "user": 703437,
         "nice": 0,
-        "sys": 2329734,
-        "idle": 26984890,
-        "irq": 399312
+        "sys": 747640,
+        "idle": 4978000,
+        "irq": 96093
       },
       {
         "model": "Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz",
         "speed": 3408,
-        "user": 1456875,
+        "user": 439515,
         "nice": 0,
-        "sys": 2226984,
-        "idle": 27412250,
-        "irq": 12046
+        "sys": 414296,
+        "idle": 5575265,
+        "irq": 2843
       },
       {
         "model": "Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz",
         "speed": 3408,
-        "user": 2648484,
+        "user": 1001281,
         "nice": 0,
-        "sys": 1905843,
-        "idle": 26541781,
-        "irq": 14515
+        "sys": 613125,
+        "idle": 4814671,
+        "irq": 4203
       },
       {
         "model": "Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz",
         "speed": 3408,
-        "user": 1335171,
+        "user": 509609,
         "nice": 0,
-        "sys": 1177875,
-        "idle": 28582843,
-        "irq": 7984
+        "sys": 402015,
+        "idle": 5517234,
+        "irq": 2609
       },
       {
         "model": "Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz",
         "speed": 3408,
-        "user": 1912828,
+        "user": 720062,
         "nice": 0,
-        "sys": 1586453,
-        "idle": 27596609,
-        "irq": 13703
+        "sys": 536656,
+        "idle": 5172140,
+        "irq": 4171
       },
       {
         "model": "Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz",
         "speed": 3408,
-        "user": 1554328,
+        "user": 567281,
         "nice": 0,
-        "sys": 1357234,
-        "idle": 28184328,
-        "irq": 9687
+        "sys": 503281,
+        "idle": 5358296,
+        "irq": 2171
       },
       {
         "model": "Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz",
         "speed": 3408,
-        "user": 2185906,
+        "user": 864843,
         "nice": 0,
-        "sys": 1311625,
-        "idle": 27598359,
-        "irq": 11718
+        "sys": 489765,
+        "idle": 5074250,
+        "irq": 2750
       },
       {
         "model": "Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz",
         "speed": 3408,
-        "user": 1774234,
+        "user": 654078,
         "nice": 0,
-        "sys": 1320765,
-        "idle": 28000890,
-        "irq": 8296
+        "sys": 494203,
+        "idle": 5280578,
+        "irq": 2343
       }
     ],
     "networkInterfaces": [
@@ -165,79 +165,75 @@
   },
   "nativeStack": [
     {
-      "pc": "0x00007ff7e2e81369",
+      "pc": "0x00007ff663f61369",
       "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
     },
     {
-      "pc": "0x00007ff7e2e856fc",
+      "pc": "0x00007ff663f656fc",
       "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28172"
     },
     {
-      "pc": "0x00007ff7e2e846a8",
+      "pc": "0x00007ff663f646a8",
       "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+23992"
     },
     {
-      "pc": "0x00007ff7e2f7314b",
+      "pc": "0x00007ff66405314b",
       "symbol": "v8::base::CPU::has_sse+37723"
     },
     {
-      "pc": "0x00007ff7e3776d3e",
+      "pc": "0x00007ff664856d3e",
       "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
     },
     {
-      "pc": "0x00007ff7e375ed81",
+      "pc": "0x00007ff66483ed81",
       "symbol": "v8::SharedArrayBuffer::Externalize+833"
     },
     {
-      "pc": "0x00007ff7e362c64c",
+      "pc": "0x00007ff66470c64c",
       "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
     },
     {
-      "pc": "0x00007ff7e36379f0",
+      "pc": "0x00007ff6647179f0",
       "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
     },
     {
-      "pc": "0x00007ff7e3634524",
+      "pc": "0x00007ff664714524",
       "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
     },
     {
-      "pc": "0x00007ff7e3629db3",
+      "pc": "0x00007ff664709db3",
       "symbol": "v8::internal::Heap::CollectGarbage+1283"
     },
     {
-      "pc": "0x00007ff7e3628584",
+      "pc": "0x00007ff664708584",
       "symbol": "v8::internal::Heap::AddRetainedMap+2356"
     },
     {
-      "pc": "0x00007ff7e3650413",
-      "symbol": "v8::internal::Factory::NewRawOneByteString+83"
+      "pc": "0x00007ff664729855",
+      "symbol": "v8::internal::Factory::NewFillerObject+53"
     },
     {
-      "pc": "0x00007ff7e347773a",
-      "symbol": "v8::internal::String::SlowFlatten+442"
+      "pc": "0x00007ff664496029",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+4057"
     },
     {
-      "pc": "0x00007ff7e3340eff",
-      "symbol": "unibrow::Utf8::EncodeOneByte+687"
-    },
-    {
-      "pc": "0x00007ff7e337a4bf",
-      "symbol": "v8::internal::StubCache::value_reference+7471"
-    },
-    {
-      "pc": "0x00007ff7e3ba2a5d",
+      "pc": "0x00007ff664c82a5d",
       "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+567949"
     },
     {
-      "pc": "0x000003cfa4adee82",
+      "pc": "0x00007ff664c01da3",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40403"
+    },
+    {
+      "pc": "0x000003d5f7a0bbfb",
       "symbol": ""
     }
   ],
   "javascriptHeap": {
-    "totalMemory": 2165723136,
-    "totalCommittedMemory": 2165723136,
-    "usedMemory": 1950054384,
-    "availableMemory": 105819288,
+    "totalMemory": 2164912128,
+    "totalCommittedMemory": 2164912128,
+    "usedMemory": 1944848632,
+    "availableMemory": 106102736,
     "memoryLimit": 2197815296,
     "heapSpaces": {
       "read_only_space": {
@@ -251,35 +247,35 @@
         "memorySize": 33554432,
         "committedMemory": 33554432,
         "capacity": 16759808,
-        "used": 2844272,
-        "available": 13915536
+        "used": 2797712,
+        "available": 13962096
       },
       "old_space": {
-        "memorySize": 1928441856,
-        "committedMemory": 1928441856,
-        "capacity": 1788553608,
-        "used": 1745731400,
-        "available": 42822208
+        "memorySize": 1938403328,
+        "committedMemory": 1938403328,
+        "capacity": 1793169784,
+        "used": 1750921696,
+        "available": 42248088
       },
       "code_space": {
-        "memorySize": 2260992,
-        "committedMemory": 2260992,
-        "capacity": 1861120,
-        "used": 1861120,
+        "memorySize": 1998848,
+        "committedMemory": 1998848,
+        "capacity": 1699936,
+        "used": 1699936,
         "available": 0
       },
       "map_space": {
-        "memorySize": 4722688,
-        "committedMemory": 4722688,
-        "capacity": 3383520,
-        "used": 3383520,
+        "memorySize": 4198400,
+        "committedMemory": 4198400,
+        "capacity": 3116480,
+        "used": 3116480,
         "available": 0
       },
       "large_object_space": {
-        "memorySize": 195858432,
-        "committedMemory": 195858432,
-        "capacity": 195651376,
-        "used": 195651376,
+        "memorySize": 185872384,
+        "committedMemory": 185872384,
+        "capacity": 185730112,
+        "used": 185730112,
         "available": 0
       },
       "code_large_object_space": {
@@ -299,17 +295,17 @@
     }
   },
   "resourceUsage": {
-    "userCpuSeconds": 191.937,
-    "kernelCpuSeconds": 266.515,
-    "cpuConsumptionPercent": 82.7531,
-    "maxRss": 2854346752,
+    "userCpuSeconds": 151.796,
+    "kernelCpuSeconds": 180.234,
+    "cpuConsumptionPercent": 325.52,
+    "maxRss": 2822389760,
     "pageFaults": {
-      "IORequired": 1658027,
+      "IORequired": 1381119,
       "IONotRequired": 0
     },
     "fsActivity": {
-      "reads": 12158,
-      "writes": 31
+      "reads": 9718,
+      "writes": 10
     }
   },
   "libuv": [
@@ -325,12 +321,11 @@
     "COMPUTERNAME": "WIN-SD8S31ALF6G",
     "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
     "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
-    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
-    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "GTK_BASEPATH": "C:\\Program Files (x86)\\GtkSharp\\2.12\\",
     "HOME": "C:\\Users\\Administrator",
     "HOMEDRIVE": "C:",
     "HOMEPATH": "\\Users\\Administrator",
-    "INIT_CWD": "C:\\Users\\Administrator\\Desktop\\dashuju-project",
+    "INIT_CWD": "C:\\Users\\Administrator\\Desktop\\home\\dashuju-project",
     "LANG": "zh_CN.UTF-8",
     "LOCALAPPDATA": "C:\\Users\\Administrator\\AppData\\Local",
     "LOGONSERVER": "\\\\WIN-SD8S31ALF6G",
@@ -477,10 +472,15 @@
     "npm_package_browserslist_production_2": "not op_mini all",
     "npm_package_dependencies_antd": "^3.26.6",
     "npm_package_dependencies_echarts": "^4.6.0",
+    "npm_package_dependencies_echarts_for_react": "^2.0.15-beta.1",
+    "npm_package_dependencies_g2": "^2.3.13",
+    "npm_package_dependencies_g2_react": "^1.3.2",
+    "npm_package_dependencies_lodash": "^4.17.15",
     "npm_package_dependencies_react": "^16.12.0",
     "npm_package_dependencies_react_dom": "^16.12.0",
+    "npm_package_dependencies_react_redux": "^7.1.3",
     "npm_package_dependencies_react_router_dom": "^5.1.2",
-    "npm_package_dependencies_react_scripts": "3.3.0",
+    "npm_package_dependencies_react_scripts": "3.4.0",
     "npm_package_dependencies__antv_g2": "^3.5.11",
     "npm_package_dependencies__antv_g2plot": "^0.11.22",
     "npm_package_dependencies__testing_library_jest_dom": "^4.2.4",
@@ -490,7 +490,7 @@
     "npm_package_devDependencies_node_sass": "^4.13.0",
     "npm_package_devDependencies_sass_loader": "^8.0.1",
     "npm_package_eslintConfig_extends": "react-app",
-    "npm_package_gitHead": "a12e86b02a83f3f88382c5cd3876ede5816b3f95",
+    "npm_package_gitHead": "82a782cc5dfab054c69d3f4295f2c5c63cbafbee",
     "npm_package_name": "my-app",
     "npm_package_private": "true",
     "npm_package_readmeFilename": "README.md",
@@ -503,7 +503,7 @@
     "NUMBER_OF_PROCESSORS": "8",
     "OneDrive": "C:\\Users\\Administrator\\OneDrive",
     "OS": "Windows_NT",
-    "Path": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\npm\\node_modules\\npm-lifecycle\\node-gyp-bin;C:\\Users\\Administrator\\Desktop\\dashuju-project\\node_modules\\.bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\BypassRuntm",
+    "Path": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\npm\\node_modules\\npm-lifecycle\\node-gyp-bin;C:\\Users\\Administrator\\Desktop\\home\\dashuju-project\\node_modules\\.bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\BypassRuntm",
     "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC;.CPL",
     "PROCESSOR_ARCHITECTURE": "AMD64",
     "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 94 Stepping 3, GenuineIntel",
@@ -517,11 +517,12 @@
     "PSModulePath": "C:\\Users\\Administrator\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
     "PUBLIC": "C:\\Users\\Public",
     "SESSIONNAME": "Console",
+    "SKIP_PREFLIGHT_CHECK": "true",
     "SystemDrive": "C:",
     "SystemRoot": "C:\\WINDOWS",
     "TEMP": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp",
     "TERM_PROGRAM": "vscode",
-    "TERM_PROGRAM_VERSION": "1.41.1",
+    "TERM_PROGRAM_VERSION": "1.42.1",
     "TMP": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp",
     "USERDOMAIN": "WIN-SD8S31ALF6G",
     "USERDOMAIN_ROAMINGPROFILE": "WIN-SD8S31ALF6G",
@@ -540,20 +541,20 @@
     "C:\\WINDOWS\\System32\\RPCRT4.dll",
     "C:\\WINDOWS\\System32\\ADVAPI32.dll",
     "C:\\WINDOWS\\System32\\msvcrt.dll",
-    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
     "C:\\WINDOWS\\System32\\sechost.dll",
-    "C:\\WINDOWS\\System32\\ucrtbase.dll",
     "C:\\WINDOWS\\System32\\USER32.dll",
     "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
     "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
     "C:\\WINDOWS\\System32\\gdi32full.dll",
     "C:\\WINDOWS\\System32\\msvcp_win.dll",
     "C:\\WINDOWS\\System32\\PSAPI.DLL",
     "C:\\WINDOWS\\System32\\CRYPT32.dll",
     "C:\\WINDOWS\\System32\\MSASN1.dll",
     "C:\\WINDOWS\\System32\\bcrypt.dll",
-    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
     "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
     "C:\\WINDOWS\\System32\\profapi.dll",
     "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
     "C:\\WINDOWS\\SYSTEM32\\winmmbase.dll",
@@ -578,6 +579,6 @@
     "C:\\WINDOWS\\system32\\wshbth.dll",
     "C:\\Windows\\System32\\rasadhlp.dll",
     "C:\\WINDOWS\\System32\\fwpuclnt.dll",
-    "\\\\?\\C:\\Users\\Administrator\\Desktop\\dashuju-project\\node_modules\\_node-sass@4.13.0@node-sass\\vendor\\win32-x64-72\\binding.node"
+    "\\\\?\\C:\\Users\\Administrator\\Desktop\\home\\dashuju-project\\node_modules\\_node-sass@4.13.1@node-sass\\vendor\\win32-x64-72\\binding.node"
   ]
 }

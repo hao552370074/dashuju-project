@@ -5,8 +5,8 @@
 // import F2 from "@antv/f2";
 // import _ from "lodash";
 
-import G2 from "@antv/g2";
 
+import G2 from "@antv/g2";
 import EchartsTest from "./model/index";
 
 import React, { Component } from "react";
@@ -256,7 +256,7 @@ class Model2 extends Component {
         </div>
 
         <div style={{ float: "left", width: "60%", height: "80vh" }}>
-          <div id="container"></div>
+          <div></div>
         </div>
 
         <div className="content-left" style={{ float: "right" }}>

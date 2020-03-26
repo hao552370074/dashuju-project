@@ -4,8 +4,9 @@ import { Layout, Menu, Breadcrumb, Icon, Button } from "antd";
 import history from "./history/history";
 import Model1 from "./component/Model-1";
 import Model2 from "./component/Model-2";
+import Model3 from "./component/Model-3";
 
-import './App.scss'
+import "./App.scss";
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
 
@@ -17,9 +18,19 @@ export default class App extends Component {
       routeName: ""
     };
   }
+
+  componentDidMount(){
+    const getScrollPosition = (el = window) => ({
+      x: el.pageXOffset !== undefined ? el.pageXOffset : el.scrollLeft,
+      y: el.pageYOffset !== undefined ? el.pageYOffset : el.scrollTop
+    });
+    // 事例
+    getScrollPosition(); // {x: 0, y: 200}
+  }
+
   render() {
     console.log(window.location);
-    console.log(this,'this');
+    console.log(this, "this");
     return (
       <Layout>
         <Header className="header">
@@ -39,7 +50,9 @@ export default class App extends Component {
           <Sider width={200} style={{ background: "#fff" }}>
             <Menu
               mode="inline"
-              defaultSelectedKeys={[window.location.pathname.replace('/','')||"1"]}
+              defaultSelectedKeys={[
+                window.location.pathname.replace("/", "") || "1"
+              ]}
               defaultOpenKeys={["sub1"]}
               style={{ height: "100%", borderRight: 0 }}
             >
@@ -55,8 +68,12 @@ export default class App extends Component {
                 <Menu.Item key="Model-1" onClick={() => this.ModelBtn(1)}>
                   Model-1
                 </Menu.Item>
-                <Menu.Item key="Model-2" onClick={() => this.ModelBtn(2)}>Model-2</Menu.Item>
-                <Menu.Item key="3">Model-3</Menu.Item>
+                <Menu.Item key="Model-2" onClick={() => this.ModelBtn(2)}>
+                  Model-2
+                </Menu.Item>
+                <Menu.Item key="3" onClick={() => this.ModelBtn(3)}>
+                  Model-3
+                </Menu.Item>
                 <Menu.Item key="4">Model-4</Menu.Item>
                 <Menu.Item key="5">Model-5</Menu.Item>
               </SubMenu>
@@ -105,6 +122,7 @@ export default class App extends Component {
               }}
             >
               <Route path="/Model-1" component={Model1}></Route>
+              <Route path="/Model-3" component={Model3}></Route>
               {/* <Route path="/Model-2" component={Model2}></Route> */}
             </Content>
           </Layout>
@@ -112,20 +130,26 @@ export default class App extends Component {
       </Layout>
     );
   }
-  ModelBtn = (i) => {
-    if (i==1) {
+  ModelBtn = i => {
+    if (i == 1) {
       history.push("/Model-1", "哈哈");
       this.setState({
-        routeName:'Model-1'
-      })
-    }else if(i==2){
+        routeName: "Model-1"
+      });
+    } else if (i == 2) {
       history.push("/Model-2", "哈哈");
       this.setState({
-          routeName:'Model-2'
-      })
+        routeName: "Model-2"
+      });
       // 改变为大屏幕
       console.log(this.props);
-      this.props.iss()
+      this.props.iss(2);
+    } else if (i == 3) {
+      history.push("/Model-3", "Model-3");
+      this.setState({
+        routeName: "Model-3"
+      });
+      this.props.iss(3);
     }
   };
 }
